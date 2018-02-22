@@ -1,0 +1,673 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red36\green43\blue51;\red217\green11\blue0;
+\red0\green68\blue254;\red255\green39\blue18;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww16440\viewh20040\viewkind1
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc
+
+\f0\b\fs28 \cf0 Custom CSS/Functions To Divi\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \
+\pard\pardeftab720
+
+\f1\fs22 \cf2 \expnd0\expndtw0\kerning0
+\
+\cf3 \expnd0\expndtw0\kerning0
+\
+\cf4 \expnd0\expndtw0\kerning0
+/**** Add ET Module Icons to Sec. Top Menu ****/\
+\cf3 \expnd0\expndtw0\kerning0
+.social_facebook_circle > a\{\
+font-family: "ETmodules" !important;\
+font-size: 20px!important;\
+\}\
+\
+\cf4 \expnd0\expndtw0\kerning0
+/**** Instructions for ET Module\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf3 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Add Custom link menu item.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Input ET Module Code (ex. Nav Label - &#xe0aa; )\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Add CSS Class above - social_facebook_circle\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+****/\cf3 \expnd0\expndtw0\kerning0
+\
+\
+\
+\cf4 \expnd0\expndtw0\kerning0
+/*--------------------------------------------*/\
+/*------[Triangle Dividers - Quiroz.co]-------*/\
+/*--------------------------------------------*/\cf3 \expnd0\expndtw0\kerning0
+\
+ \
+    .triangles::before, .triangles::after \{position: absolute; content: ''; pointer-events: none;\}\
+ \
+    .triangles::before, .triangles::after \{\
+        left: 50%;\
+        width: 80px;\
+        height: 80px;\
+        -webkit-transform: translateX(-50%) rotate(45deg);\
+        transform: translateX(-50%) rotate(45deg);\}\
+ \
+       \cf4 \expnd0\expndtw0\kerning0
+ /* Top arrow pointing down. Currently set as black. This can be removed if you don't want a top arrow */\cf3 \expnd0\expndtw0\kerning0
+\
+.triangles::before \{top: -50px; background: #060708;\}\
+ \
+      \cf5 \expnd0\expndtw0\kerning0
+  \cf4 \expnd0\expndtw0\kerning0
+/* Bottom arrow pointing down. Currently set to inherit the background of the section. This can be removed if you don't want a bottom arrow */\cf3 \expnd0\expndtw0\kerning0
+\
+.triangles::after \{ bottom: -40px; z-index: 10; background: inherit;\}\
+\
+\
+\cf4 \expnd0\expndtw0\kerning0
+/**** Menu Link Hover Color (Desktop) ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+#top-menu-nav #top-menu a:hover,\
+#mobile_menu_slide a:hover \{ \
+    color: #008c99 !important; \
+    opacity:1 !important;\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Fixed Menu Text Color (Desktop) ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.et_header_style_left .et-fixed-header #et-top-navigation nav>ul>li>a, .et_header_style_split .et-fixed-header #et-top-navigation nav>ul>li>a \{ \
+    color: #ba131a!important;\
+\}\
+\
+\
+\
+\pard\tx720\pardeftab720\qc
+
+\f0\b\fs28 \cf0 \kerning1\expnd0\expndtw0 *************************************MOBILE *************************************\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f1\b0\fs22 \cf4 \expnd0\expndtw0\kerning0
+/**** Fixed Mobile Menu Header ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+ul.centered-social \{ \
+width:100%; \
+text-align:center; \
+margin: 0 0 0 0 ; \
+\}\
+.centered-social li \{ \
+float:none; \
+display:inline-block; \
+\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Scroll Mobile Menu ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.et_mobile_menu \{\
+    overflow: scroll !important;\
+    max-height: 83vh;\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Mobile Menu Link Hover Color ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+#mobile_menu a:hover \{ \
+    color: #008c99 !important; \
+    opacity:1 !important;\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Mobile Menu BG Color ****/\
+\pard\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+ul#mobile_menu.et_mobile_menu \{\
+background-color: #1a5eac;\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Hamburger Menu Color (three lines) ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+span.mobile_menu_bar:before \{\
+    color: #008c99 !important;\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Mobile Drop Down Menu Border Color ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.et-search-form, .nav li ul, .et_mobile_menu \{\
+    border-color: #008c99;\
+\} \
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/*------------------------------------------------*/\
+/*-----------------[CTA Menu Item]----------------*/\
+/*-----------------[by GenoQuiroz {\field{\*\fldinst{HYPERLINK "https://quiroz.co/transform-a-divi-menu-item-into-a-cta/"}}{\fldrslt \expnd0\expndtw0\kerning0
+https://quiroz.co/transform-a-divi-menu-item-into-a-cta/}}]----------------*/\
+/*------------------------------------------------*/\
+ \
+/* style the get started cta button */\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+            .get-started \{border-radius: 0px;\}\
+            .get-started a \{color: #fff!important;\}\
+            li.get-started \{\
+                background-color:#ed7818; the\
+                font-weight: 700; \
+                text-transform: uppercase; \
+                text-align: center; \
+                padding: 12px 13px 10px 10px!important;\
+            border-radius: 3px;\
+                -moz-transition: all 0.5s; \
+                -webkit-transition: all 0.5s;\
+                transition: all 0.5s;\}\
+            li.get-started:hover \{background-color:#c96310;\}\
+ \
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/* fixed header button text color */\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.et-fixed-header #top-menu .get-started a \{\
+	color: #fff!important;\}\
+\
+.get-started li.current-menu-ancestor > a, .get-started li.current-menu-item > a \{\
+	color: #fff !important;\
+\}\
+\
+@media only screen and (min-width : 981px) \{\
+            li.get-started \{height: 33px;\
+\}\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/* removes button on desktop */\cf3 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf3 \expnd0\expndtw0\kerning0
+@media only screen and (min-width : 1024px) \{\
+li#menu-item-\cf4 \expnd0\expndtw0\kerning0
+id#\cf3 \expnd0\expndtw0\kerning0
+ \{\
+     display: none;\
+\}\}\
+\
+\cf6 /* ADD THIS ONLY IF YOUR CTA BUTTON HAS A DROP DOWN MENU */\
+\cf3  \
+\cf6 /* style the get started cta button drop down menu */\cf3 \
+    li.get-started li a \{\
+        color: #666!important;\
+        width: 160px;\
+        text-transform: none;\
+        font-weight: normal;\
+        background-color:#fff;\}\
+ \
+ \
+\cf6 /* mobile menu adjustments */\cf3 \
+    .et_mobile_menu li a \{padding: 10px 5%; line-height: normal;\}\
+ \
+    .et_mobile_menu li.get-started \{\
+        background-color: #fff;\
+        padding-left: 0px;\
+        text-align: left;\}\
+ \
+    .et_mobile_menu li.get-started a\{\
+        color: #f00!important; font-weight: 900;\}\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+\
+\
+\pard\tx720\pardeftab720
+
+\f0\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+INCREASE THE MOBILE LOGO SIZE
+\f1\b0 \cf3 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+
+\fs22 \cf3 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/* Increase mobile menu bar height */\cf3 \expnd0\expndtw0\kerning0
+\
+.et_header_style_left .mobile_menu_bar \{\
+  padding-bottom: 85px;\
+\}\
+\
+\cf4 \expnd0\expndtw0\kerning0
+/* Moved hamburger down */\cf3 \expnd0\expndtw0\kerning0
+\
+.mobile_menu_bar:before \{\
+  top: 35px !important;\
+\}\
+\
+\cf4 \expnd0\expndtw0\kerning0
+/* Set the maximum height of the logo itself */\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+@media (max-width: 980px) \{\
+.et_header_style_left #logo \{\
+    max-height: 90% !important;\
+  \}\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/* Switch mobile logo */\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+@media only screen and (max-width: 980px) \{\
+#logo \{\
+    content: url("/wp-content/uploads/2017/06/your-awesome-mobile-logo.png");\
+  \}\
+\}\
+\pard\pardeftab720\sl572
+
+\f0\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+INCREASE LETTER SPACING AND FONT SIZE ON MOBILE MENU
+\f1\b0 \cf3 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+
+\fs22 \cf3 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/* Increased letter spacing on mobile menu */\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.et_mobile_menu \{\
+  letter-spacing: 2px;\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/* Increased font size on mobile menu */\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.et_mobile_menu li a \{\
+  font-size: 18px;\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf6 \expnd0\expndtw0\kerning0
+/**** Hide Secondary Top Menu on Mobile ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+#mobile_menu li:not([id]) \{ display:none !important;\
+\}\
+\
+.et_mobile_menu .menu-item-has-children > a \{\
+	background-color: transparent;\
+\}\
+\
+#main-header .et_mobile_menu li ul.sub-menu.hide \{\
+	display: none !important;\
+	visibility: hidden !important;\
+	transition: all 1.5s ease-in-out;\
+\}\
+\
+#main-header .et_mobile_menu li ul.sub-menu.visible \{\
+	display: block !important;\
+	visibility: visible !important;\
+\}\
+\
+.et_mobile_menu .menu-item-has-children > a:after \{\
+  content: '';\
+  width: 0;\
+  height: 0;\
+  border-left: 7px solid transparent;\
+  border-right: 7px solid transparent;\
+  border-top: 7px solid #ffffff;\
+	position: absolute;\
+  right: 25px;\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf6 \expnd0\expndtw0\kerning0
+/**** Collapse (Nested) Mobile Menu On Click ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.et_mobile_menu .menu-item-has-children > a:hover:after \{\
+	border-top: 7px solid #cc0000;\
+\}\
+\
+\pard\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.et_mobile_menu .menu-item-has-children > a \{\
+	background-color: transparent;\
+\}\
+\
+#main-header .et_mobile_menu li ul.sub-menu.hide \{\
+	display: none !important;\
+	visibility: hidden !important;\
+	transition: all 1.5s ease-in-out;\
+\}\
+\
+#main-header .et_mobile_menu li ul.sub-menu.visible \{\
+	display: block !important;\
+	visibility: visible !important;\
+\}\
+\
+.et_mobile_menu .menu-item-has-children > a:after \{\
+  content: '';\
+  width: 0;\
+  height: 0;\
+  border-left: 7px solid transparent;\
+  border-right: 7px solid transparent;\
+  border-top: 7px solid #00ff10!important;\
+	position: absolute;\
+  right: 25px;\
+\}\
+\
+.et_mobile_menu .menu-item-has-children > a:hover:after \{\
+	border-top: 7px solid #00ff10!important;\
+\}\
+\pard\pardeftab720\sl572
+\cf3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+ADD CODE TO THE < BODY > (GOOD FOR TRACKING CODES SUCH AS GOOGLE ANALYTICS)
+\f2\b \cf3 \expnd0\expndtw0\kerning0
+\
+
+\f1\b0 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+<script>\
+(function($) \{\
+     \
+    function setup_collapsible_submenus() \{\
+        var $menu = $('#mobile_menu'),\
+            top_level_link = '.menu-item-has-children > a';\
+        $menu.find('a').each(function() \{\
+            $(this).off('click');\
+             \
+            if ( $(this).is(top_level_link) ) \{\
+                $(this).attr('href', '#');\
+                $(this).next('.sub-menu').addClass('hide');\
+            \}\
+             \
+            if ( ! $(this).siblings('.sub-menu').length ) \{\
+                $(this).on('click', function(event) \{\
+                    $(this).parents('.mobile_nav').trigger('click');\
+                \});\
+            \} else \{\
+                $(this).on('click', function(event) \{\
+                    event.preventDefault();\
+                    $(this).next('.sub-menu').toggleClass('visible');\
+                \});\
+            \}\
+        \});\
+    \}\
+     \
+    $(window).load(function() \{\
+        setTimeout(function() \{\
+            setup_collapsible_submenus();\
+        \}, 700);\
+    \});\
+\})(jQuery);\
+</script>\
+\pard\tx720\pardeftab720\qc
+
+\f2\b \cf3 \expnd0\expndtw0\kerning0
+****************************
+\fs28 END MOBILE
+\fs22 **************************\
+\pard\tx720\pardeftab720
+
+\f1\b0 \cf3 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Center Footer Copyright Text ****/\
+\cf2 \expnd0\expndtw0\kerning0
+#footer-info\cf3 \expnd0\expndtw0\kerning0
+ \{\
+\pard\tx720\pardeftab720
+
+\fs20 \cf3 \expnd0\expndtw0\kerning0
+	
+\fs22 \cf0 \expnd0\expndtw0\kerning0
+float: none;\
+    	text-align:\cf3 \expnd0\expndtw0\kerning0
+ center;\
+\pard\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+\}\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Change Comment/Submit Button Color ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.form-submit .et_pb_button \{\
+    color: #ffffff !important;\
+    background: #008c99;\
+    border-color: #008c99;\
+    border-radius: 2px;\
+    letter-spacing: 1px;\
+    font-size: 18px;\
+\}\
+\
+.form-submit .et_pb_button:hover \{\
+    color: #ffffff !important;\
+    background: rgba(0,140,153,0.5) !important;\
+    border-color: rgba(0,140,153,0.5) !important;\
+    border-radius: 2px;\
+    letter-spacing: 1px;\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\
+/**** Google Map Grayscale ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.et_pb_map_container \{ \
+    filter: url("data:image/svg+xml;utf8,#grayscale"); \
+    filter: grayscale(100%);\
+    -moz-filter: grayscale(100%);\
+    -ms-filter: grayscale(100%);\
+    -o-filter: grayscale(100%);\
+    filter: gray; /* IE6-9 */\
+    -webkit-filter: grayscale(100%);\
+\} \
+\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Innershadow on Contact Form Fields ****/\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+.innershadow \{\
+   -moz-box-shadow: inset 0 0 5px 5px \
+   #888; -webkit-box-shadow: inset 0 0 \
+   5px 5px#888; box-shadow: inset 0 0 \
+   5px 5px #888; height:15px; \
+   background-color:transparent; \
+   height:50px\
+\}\
+\
+input, textarea \{\
+  background: #fff;\
+  color: #525865;\
+  border-radius: 4px;\
+  border: 1px solid #d1d1d1;\
+  box-shadow: inset 1px 2px 8px rgba(0, \
+  0, 0, 0.07);\
+  font-family: inherit;\
+  font-size: 1em;\
+  line-height: 1.45;\
+  outline: none;\
+  padding: 0.6em 1.45em 0.7em;\
+  -webkit-transition: .18s ease-out;\
+  -moz-transition: .18s ease-out;\
+  -o-transition: .18s ease-out;\
+  transition: .18s ease-out;\
+\}\
+\
+input:hover \{\
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);\
+\}\
+\
+input:focus \{\
+  color: #4b515d;\
+  border: 1px solid #B8B6B6;\
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);\
+\}\
+\
+textarea:hover \{\
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);\
+\}\
+\
+textarea:focus \{\
+  color: #4b515d;\
+  border: 1px solid #B8B6B6;\
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);\
+\}\
+\
+body \{\
+  background: #fff;\
+  margin: 20px;\
+\}\
+\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** Background Color Overlay on Section Modules/Then change the section class to \'93black_overlay\'94 May need to test in areas ****/\
+\pard\tx720\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\
+ /* PLACE IN THE BEFORE AREA for Static Images */\
+\pard\tx720\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+content:"";\
+display: block;\
+height: 100%;\
+position: absolute;\
+top: 0;\
+left: 0;\
+width: 100%;\
+background-color: rgba(0, 0, 0, .6);\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+ /* PLACE IN THE AFTER AREA for Parallax Images */\
+\pard\tx720\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+content:"";\
+display: block;\
+height: 100%;\
+position: absolute;\
+top: 0;\
+left: 0;\
+width: 100%;\
+background-color: rgba(0, 0, 0, .6);\
+\}\
+\
+\
+ \cf4 \expnd0\expndtw0\kerning0
+/* Add this in Theme Custom CSS then add the Class ID to Section Module\'97-TEST */
+\f2\b \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b0 \expnd0\expndtw0\kerning0
+.black_overlay .et_parallax_bg:before, .black_overlay:before \{\
+  content:"";\
+  display: block;\
+  height: 100%;\
+  position: absolute;\
+  top: 0;\
+  left: 0;\
+  width: 100%;\
+  background-color: rgba(0, 0, 0, .6);\
+\}\
+\
+\pard\tx720\pardeftab720
+\cf3 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+/**** WooCommerce Global Button Styling\'97May need to test ****/\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\fs20 \cf0 \kerning1\expnd0\expndtw0 .page-id-888 .button, .page-id-888 .wc-proceed-to-checkout a \{\
+color: #fff!important;\
+\}\
+.woocommerce span.onsale, .woocommerce-page span.onsale \{\
+    background: #f3bc00!important;\
+\}\
+.page-id-889.button wc-backward \{\
+color: #fff!important;\
+background-color: #f3bc00!important;\
+\}\
+.woocommerce .button, .woocommerce .wc-proceed-to-checkout a \{\
+color: #fff!important;\
+\}\
+\pard\tx720\pardeftab720
+
+\fs22 \cf0 \expnd0\expndtw0\kerning0
+\
+\
+\
+\pard\tx720\pardeftab720
+
+\f2\b \cf4 \expnd0\expndtw0\kerning0
+ADD SVG to Wordpress Library (in child functions.php before the ?> tag)\
+\pard\tx720\pardeftab720
+
+\f1\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+
+\f2\b \cf0 \expnd0\expndtw0\kerning0
+// Allow SVG uploads
+\f1\b0 \expnd0\expndtw0\kerning0
+\
+\
+function allow_svgimg_types($mimes) \{\
+  $mimes['svg'] = 'image/svg+xml';\
+  return $mimes;\
+\}\
+add_filter('upload_mimes', 'allow_svgimg_types');\
+}
