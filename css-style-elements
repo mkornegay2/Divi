@@ -120,6 +120,9 @@ span.mobile_menu_bar:before {
 	color: #fff !important;
 }
 
+/* changes current menu item color */
+.et_pb_fullwidth_menu_0.et_pb_fullwidth_menu ul li.buy-online.current-menu-item.menu-item-2433 a{color:white!important;}
+
 @media only screen and (min-width : 981px) {
             li.get-started {height: 33px;
 }}
