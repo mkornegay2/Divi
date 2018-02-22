@@ -1,0 +1,453 @@
+/**************************Custom CSS/Functions To Divi************************/
+
+
+
+/**** Add ET Module Icons to Sec. Top Menu ****/
+.social_facebook_circle > a{
+font-family: "ETmodules" !important;
+font-size: 20px!important;
+}
+
+/**** Instructions for ET Module
+
+	•	Add Custom link menu item.
+	•	Input ET Module Code (ex. Nav Label - &#xe0aa; )
+	•	Add CSS Class above - social_facebook_circle
+
+****/
+
+
+/*--------------------------------------------*/
+/*------[Triangle Dividers - Quiroz.co]-------*/
+/*--------------------------------------------*/
+ 
+    .triangles::before, .triangles::after {position: absolute; content: ''; pointer-events: none;}
+ 
+    .triangles::before, .triangles::after {
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        -webkit-transform: translateX(-50%) rotate(45deg);
+        transform: translateX(-50%) rotate(45deg);}
+ 
+        /* Top arrow pointing down. Currently set as black. This can be removed if you don't want a top arrow */
+.triangles::before {top: -50px; background: #060708;}
+ 
+        /* Bottom arrow pointing down. Currently set to inherit the background of the section. This can be removed if you don't want a bottom arrow */
+.triangles::after { bottom: -40px; z-index: 10; background: inherit;}
+
+
+/**** Menu Link Hover Color (Desktop) ****/
+#top-menu-nav #top-menu a:hover,
+#mobile_menu_slide a:hover { 
+    color: #008c99 !important; 
+    opacity:1 !important;
+}
+
+/**** Fixed Menu Text Color (Desktop) ****/
+.et_header_style_left .et-fixed-header #et-top-navigation nav>ul>li>a, .et_header_style_split .et-fixed-header #et-top-navigation nav>ul>li>a { 
+    color: #ba131a!important;
+}
+
+
+
+/*************************************MOBILE *************************************/
+
+/**** Fixed Mobile Menu Header ****/
+ul.centered-social { 
+width:100%; 
+text-align:center; 
+margin: 0 0 0 0 ; 
+}
+.centered-social li { 
+float:none; 
+display:inline-block; 
+}
+
+/**** Scroll Mobile Menu ****/
+.et_mobile_menu {
+    overflow: scroll !important;
+    max-height: 83vh;
+}
+
+/**** Mobile Menu Link Hover Color ****/
+#mobile_menu a:hover { 
+    color: #008c99 !important; 
+    opacity:1 !important;
+}
+
+/**** Mobile Menu BG Color ****/
+ul#mobile_menu.et_mobile_menu {
+background-color: #1a5eac;
+}
+
+
+/**** Hamburger Menu Color (three lines) ****/
+span.mobile_menu_bar:before {
+    color: #008c99 !important;
+}
+
+/**** Mobile Drop Down Menu Border Color ****/
+.et-search-form, .nav li ul, .et_mobile_menu {
+    border-color: #008c99;
+} 
+
+/*------------------------------------------------*/
+/*-----------------[CTA Menu Item]----------------*/
+/*-----------------[by GenoQuiroz https://quiroz.co/transform-a-divi-menu-item-into-a-cta/]----------------*/
+/*------------------------------------------------*/
+ 
+/* style the get started cta button */
+            .get-started {border-radius: 0px;}
+            .get-started a {color: #fff!important;}
+            li.get-started {
+                background-color:#ed7818; the
+                font-weight: 700; 
+                text-transform: uppercase; 
+                text-align: center; 
+                padding: 12px 13px 10px 10px!important;
+            border-radius: 3px;
+                -moz-transition: all 0.5s; 
+                -webkit-transition: all 0.5s;
+                transition: all 0.5s;}
+            li.get-started:hover {background-color:#c96310;}
+ 
+/* fixed header button text color */
+.et-fixed-header #top-menu .get-started a {
+	color: #fff!important;}
+
+.get-started li.current-menu-ancestor > a, .get-started li.current-menu-item > a {
+	color: #fff !important;
+}
+
+@media only screen and (min-width : 981px) {
+            li.get-started {height: 33px;
+}}
+
+/* removes button on desktop */
+@media only screen and (min-width : 1024px) {
+li#menu-item-id# {
+     display: none;
+}}
+
+/* ADD THIS ONLY IF YOUR CTA BUTTON HAS A DROP DOWN MENU */
+ 
+/* style the get started cta button drop down menu */
+    li.get-started li a {
+        color: #666!important;
+        width: 160px;
+        text-transform: none;
+        font-weight: normal;
+        background-color:#fff;}
+ 
+ 
+/* mobile menu adjustments */
+    .et_mobile_menu li a {padding: 10px 5%; line-height: normal;}
+ 
+    .et_mobile_menu li.get-started {
+        background-color: #fff;
+        padding-left: 0px;
+        text-align: left;}
+ 
+    .et_mobile_menu li.get-started a{
+        color: #f00!important; font-weight: 900;}
+
+
+INCREASE THE MOBILE LOGO SIZE
+
+/* Increase mobile menu bar height */
+.et_header_style_left .mobile_menu_bar {
+  padding-bottom: 85px;
+}
+
+/* Moved hamburger down */
+.mobile_menu_bar:before {
+  top: 35px !important;
+}
+
+/* Set the maximum height of the logo itself */
+@media (max-width: 980px) {
+.et_header_style_left #logo {
+    max-height: 90% !important;
+  }
+}
+
+/* Switch mobile logo */
+@media only screen and (max-width: 980px) {
+#logo {
+    content: url("/wp-content/uploads/2017/06/your-awesome-mobile-logo.png");
+  }
+}
+INCREASE LETTER SPACING AND FONT SIZE ON MOBILE MENU
+
+/* Increased letter spacing on mobile menu */
+.et_mobile_menu {
+  letter-spacing: 2px;
+}
+
+/* Increased font size on mobile menu */
+.et_mobile_menu li a {
+  font-size: 18px;
+}
+
+/**** Hide Secondary Top Menu on Mobile ****/
+#mobile_menu li:not([id]) { display:none !important;
+}
+
+.et_mobile_menu .menu-item-has-children > a {
+	background-color: transparent;
+}
+
+#main-header .et_mobile_menu li ul.sub-menu.hide {
+	display: none !important;
+	visibility: hidden !important;
+	transition: all 1.5s ease-in-out;
+}
+
+#main-header .et_mobile_menu li ul.sub-menu.visible {
+	display: block !important;
+	visibility: visible !important;
+}
+
+.et_mobile_menu .menu-item-has-children > a:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #ffffff;
+	position: absolute;
+  right: 25px;
+}
+
+/**** Collapse (Nested) Mobile Menu On Click ****/
+.et_mobile_menu .menu-item-has-children > a:hover:after {
+	border-top: 7px solid #cc0000;
+}
+
+.et_mobile_menu .menu-item-has-children > a {
+	background-color: transparent;
+}
+
+#main-header .et_mobile_menu li ul.sub-menu.hide {
+	display: none !important;
+	visibility: hidden !important;
+	transition: all 1.5s ease-in-out;
+}
+
+#main-header .et_mobile_menu li ul.sub-menu.visible {
+	display: block !important;
+	visibility: visible !important;
+}
+
+.et_mobile_menu .menu-item-has-children > a:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #00ff10!important;
+	position: absolute;
+  right: 25px;
+}
+
+.et_mobile_menu .menu-item-has-children > a:hover:after {
+	border-top: 7px solid #00ff10!important;
+}
+
+ADD CODE TO THE < BODY > (GOOD FOR TRACKING CODES SUCH AS GOOGLE ANALYTICS)
+
+<script>
+(function($) {
+     
+    function setup_collapsible_submenus() {
+        var $menu = $('#mobile_menu'),
+            top_level_link = '.menu-item-has-children > a';
+        $menu.find('a').each(function() {
+            $(this).off('click');
+             
+            if ( $(this).is(top_level_link) ) {
+                $(this).attr('href', '#');
+                $(this).next('.sub-menu').addClass('hide');
+            }
+             
+            if ( ! $(this).siblings('.sub-menu').length ) {
+                $(this).on('click', function(event) {
+                    $(this).parents('.mobile_nav').trigger('click');
+                });
+            } else {
+                $(this).on('click', function(event) {
+                    event.preventDefault();
+                    $(this).next('.sub-menu').toggleClass('visible');
+                });
+            }
+        });
+    }
+     
+    $(window).load(function() {
+        setTimeout(function() {
+            setup_collapsible_submenus();
+        }, 700);
+    });
+})(jQuery);
+</script>
+****************************END MOBILE**************************
+
+
+/**** Center Footer Copyright Text ****/
+#footer-info {
+	float: none;
+    	text-align: center;
+}
+
+
+/**** Change Comment/Submit Button Color ****/
+.form-submit .et_pb_button {
+    color: #ffffff !important;
+    background: #008c99;
+    border-color: #008c99;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.form-submit .et_pb_button:hover {
+    color: #ffffff !important;
+    background: rgba(0,140,153,0.5) !important;
+    border-color: rgba(0,140,153,0.5) !important;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+
+
+/**** Google Map Grayscale ****/
+.et_pb_map_container { 
+    filter: url("data:image/svg+xml;utf8,#grayscale"); 
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+} 
+
+
+/**** Innershadow on Contact Form Fields ****/
+.innershadow {
+   -moz-box-shadow: inset 0 0 5px 5px 
+   #888; -webkit-box-shadow: inset 0 0 
+   5px 5px#888; box-shadow: inset 0 0 
+   5px 5px #888; height:15px; 
+   background-color:transparent; 
+   height:50px
+}
+
+input, textarea {
+  background: #fff;
+  color: #525865;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 
+  0, 0, 0.07);
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.45;
+  outline: none;
+  padding: 0.6em 1.45em 0.7em;
+  -webkit-transition: .18s ease-out;
+  -moz-transition: .18s ease-out;
+  -o-transition: .18s ease-out;
+  transition: .18s ease-out;
+}
+
+input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+input:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+textarea:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+textarea:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: #fff;
+  margin: 20px;
+}
+
+
+/**** Background Color Overlay on Section Modules/Then change the section class to “black_overlay” May need to test in areas ****/
+
+
+ /* PLACE IN THE BEFORE AREA for Static Images */
+content:"";
+display: block;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, .6);
+}
+
+ /* PLACE IN THE AFTER AREA for Parallax Images */
+content:"";
+display: block;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, .6);
+}
+
+
+ /* Add this in Theme Custom CSS then add the Class ID to Section Module—-TEST */
+.black_overlay .et_parallax_bg:before, .black_overlay:before {
+  content:"";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+
+/**** WooCommerce Global Button Styling—May need to test ****/
+.page-id-888 .button, .page-id-888 .wc-proceed-to-checkout a {
+color: #fff!important;
+}
+.woocommerce span.onsale, .woocommerce-page span.onsale {
+    background: #f3bc00!important;
+}
+.page-id-889.button wc-backward {
+color: #fff!important;
+background-color: #f3bc00!important;
+}
+.woocommerce .button, .woocommerce .wc-proceed-to-checkout a {
+color: #fff!important;
+}
+
+
+
+ADD SVG to Wordpress Library (in child functions.php before the ?> tag)
+
+// Allow SVG uploads
+
+function allow_svgimg_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'allow_svgimg_types');
